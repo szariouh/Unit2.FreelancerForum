@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancers</title>
+    <style>
+        .overview{
+            margin: 2rem auto;
+            width: 50%;
+            border: 2px solid;
+            padding: 0 1rem;
+        }
+        h1{
+            text-align: center
+        }
+        h2{
+            text-align: center;
+        }
+        #avgStartingPrice{
+            text-align: center;
+            font-size: 20px;
+        }
+        #freelancers{
+            display: flex;
+        }
+        #freelancers div{
+            width: 100%;
+            margin: 0 1rem;
+            font-size: 20px;
+        }
+      
+        #freelancers div div{
+            font-weight: bold;
+        }
+        ul{
+            list-style: none;
+            padding-left: 1.5rem;
+            margin-top: 1rem;
+        }
+        li:last-of-type{
+            background-color: lightgreen;  /* Highlight the new freelancer*/
+        }
+        ul li{
+            padding: 0.5rem 1rem;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="overview">
+        <h1>Freelancer Forum</h1>
+        <div id="avgStartingPrice"></div>
+
+        <h2>Available Freelancers</h2>
+        <div id="freelancers"><div>
+                <div>Name</div>
+                <ul id="name"></ul>
+            </div>
+            <div>
+                <div>Occupation</div>
+                <ul id="occupation"></ul>
+            </div>
+            <div>
+                <div>Starting Price</div>
+                <ul id="startingPrice"></ul>
+            </div>
+        </div>
+</div>
+    
+<script src="index.js"></script>
+</body>
+</html>
